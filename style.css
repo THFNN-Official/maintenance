@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Playwrite DE Grund", cursive;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #080808;
+    color: #fff;
+}
+.konten-utama{
+    padding: 50px 500px;
+}
+.pesan-text{
+    padding: 10px 10%;
+    display: grid;
+    grid-gap: 10px;
+}
+.sub-title{
+    font-family: "Arsenal SC", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+    padding-top: 10px; 
+}
+.notif{
+    font-size: 12px;
+    color: rgb(136, 136, 136);
+    margin-top: -10px;
+    margin-left: 20px;
+}
+/* .foto-informasi{
+    width: 100px;
+    margin-bottom: 30px;
+} */
+.information-list div{
+    background: #262626;
+    margin: 20px;
+    padding: 30px;
+    font-size: 18px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.information-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.information-list div p{
+    margin-top: 20px;
+}
+.information-list div:hover{
+    background: #341c50;
+    transform:translateY(-10px);
+}
+.tombol{
+    position: absolute;
+    font-family: "Arsenal SC", sans-serif;
+    text-decoration: none;
+    font-size: 18px;
+    width: 150px;
+    height: 40px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: -50px;
+    margin-left: 45%;
+    padding-top: 5px;
+    background: #262626;
+    color: #fff;
+    transition: background 0.5s;
+    animation: shake 3s cubic-bezier(.36,.07,.19,.97) both infinite;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+.tobol:hover{
+    background: #4b8490;
+}
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+      }
+      
+      20%, 80% {
+        transform: translate3d(2px, 0, 0);
+      }
+    
+      30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+      }
+    
+      40%, 60% {
+        transform: translate3d(4px, 0, 0);
+      }
+}
+.update{
+ margin-top: 40px;
+ margin-left: 35%;
+}
+
+/* CSS Mobile */
+
+@media only screen and (max-width: 600px){
+    
+    .konten-utama{
+        padding: 80px 0px;
+    }
+#panel-information{
+    .header-info{
+        padding: 20px 0px;
+    } 
+}
+.sub-title{
+    font-family: "Arsenal SC", sans-serif;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+    padding-top: 10px; 
+}
+.notif{
+    font-size: 10px;
+    color: rgb(136, 136, 136);
+    margin-left: 30px;
+}
+.information-list div{
+    background: #262626;
+    margin: 20px;
+    padding: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.information-list div h2{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.information-list div p{
+    margin-top: 10px;
+    text-align: center;
+}
+.tombol{
+    position: absolute;
+    font-family: "Arsenal SC", sans-serif;
+    text-decoration: none;
+    font-size: 18px;
+    width: 150px;
+    height: 40px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: -70px;
+    margin-left: 115px;
+    padding-top: 5px;
+    background: #262626;
+    color: #fff;
+    transition: background 0.5s;
+    animation: shake 3s cubic-bezier(.36,.07,.19,.97) both infinite;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+.tobol:hover{
+    background: #4b8490;
+}
+.update{
+    margin-top: 10px;
+    margin-left: 0;
+   }
+
+}
